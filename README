@@ -1,0 +1,16 @@
+This is content management system for comic/cartoon artists.
+Using this they can easily publish their comics online without any hassle.
+Right now it is in pre-alpha stage.
+It's written in Django (Python framework)
+
+To run this you need to have Django installed which you can find here 
+https://www.djangoproject.com/download/
+
+To run this app go to the directory where you have downloaded it, then
+1. cd into the directory
+2. In setting.py specify your database (refer django docs for more details)
+3. "then in python manage.py syncdb"
+2. type "python manage.py runserver"
+3. then go to the url specified in the terminal (by default it is http://127.0.0.1:8000)
+4. To add comic go to http://127.0.0.1:8000/comics/add
+5. To view the admin page go to http://127.0.0.1:8000/admin

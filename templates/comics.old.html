@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>Comic</title>
+</head>
+<style type="text/css">
+.header {
+	font: 16px "Lucida Grande", Lucida, Verdana, sans-serif;
+	text-align: center;
+	word-spacing: 150px;
+}
+
+.content {
+	text-align: center;
+	font: 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+</style>
+
+<body>
+
+<div class="header">
+<a href="{{prev}}">Previous</a>
+<a href="./add">Add</a>
+<a href="{{next}}">Next</a>
+</div>
+<div class="content">
+<h1>{{ message }}</h1>
+<h1>{{ comic_name }}</h1>
+<img src="{{ MEDIA_URL }}{{ image }}" />
+<p>{{ description }}</p>
+<hr>
+</div>
+{% for cx in comics %}
+<img src="{{MEDIA_URL}}{{cx.comic_image}}" width="125"/>
+{% endfor %}
+
+
+</body>
+</html>

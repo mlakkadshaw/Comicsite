@@ -1,0 +1,15 @@
+include README
+include AUTHORS
+include INSTALL
+include LICENSE
+include MANIFEST.in
+include scrapy/mime.types
+include scrapyd/default_scrapyd.conf
+recursive-include scrapy/templates *
+recursive-include scrapy/tests/sample_data *
+recursive-include docs *
+prune docs/build
+recursive-include scripts *
+recursive-include examples *
+recursive-include extras *
+recursive-include bin *
